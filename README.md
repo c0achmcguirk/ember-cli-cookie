@@ -4,7 +4,10 @@
 
 ## How does this differ from the original?
 
-I forked from [achambers/ember-cli-cookie](https://github.com/achambers/ember-cli-cookie) to do one thing: remove the `postInstall` step from the package.json. This was causing my `npm install` step to exit with code 0 on our build server.
+I forked from [achambers/ember-cli-cookie](https://github.com/achambers/ember-cli-cookie) to fix my teamcity builds. I: 
+
+  * removed the `postInstall` step from the package.json. This was causing my `npm install` step to exit with code 0 on our build server.
+  * Moved the dependency from `jquery-cookie` to `jquery.cookie` which seemed to satisfy bower
 
 ## Motivation
 

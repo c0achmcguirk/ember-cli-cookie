@@ -25,7 +25,7 @@ EmberCLICookie.prototype.treeFor = function(name) {
 
 EmberCLICookie.prototype.included = function(app) {
   this.app = app;
-  this.app.import('vendor/jquery-cookie/jquery.cookie.js');
+  this.app.import('vendor/jquery.cookie/jquery.cookie.js');
 };
 
 module.exports = EmberCLICookie;
