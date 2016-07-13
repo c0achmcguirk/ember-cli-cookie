@@ -2,6 +2,10 @@
 
 > Wrap $.cookie in Ember goodness
 
+## How does this differ from the original?
+
+I forked from [achambers/ember-cli-cookie](https://github.com/achambers/ember-cli-cookie) to do one thing: remove the `postInstall` step from the package.json. This was causing my `npm install` step to exit with code 0 on our build server.
+
 ## Motivation
 
 To try and remove external dependencies from my [Ember CLI][1] apps with a Promise aware object wrapper.
